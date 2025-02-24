@@ -1,4 +1,5 @@
 import { Book, Menu, Sunset, Trees, Zap } from 'lucide-react';
+import { Logo } from './logo';
 
 import {
   Accordion,
@@ -50,12 +51,6 @@ interface Navbar1Props {
 }
 
 const Navbar = ({
-  logo = {
-    url: 'https://www.shadcnblocks.com',
-    src: 'https://www.shadcnblocks.com/images/block/block-1.svg',
-    alt: 'logo',
-    title: 'Shadcnblocks.com'
-  },
   menu = [
     { title: 'Home', url: '#' },
     {
@@ -143,9 +138,8 @@ const Navbar = ({
       <div className="container">
         <nav className="hidden justify-between lg:flex">
           <div className="flex items-center gap-6">
-            <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8" alt={logo.alt} />
-              <span className="text-lg font-semibold">{logo.title}</span>
+            <a className="flex items-center gap-2">
+              <Logo width={254} height={50} />
             </a>
             <div className="flex items-center">
               <NavigationMenu>
@@ -164,9 +158,8 @@ const Navbar = ({
         </nav>
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
-            <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="w-8" alt={logo.alt} />
-              <span className="text-lg font-semibold">{logo.title}</span>
+            <a className="flex items-center gap-2">
+              <Logo width={254} height={50} />
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -177,9 +170,8 @@ const Navbar = ({
               <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="w-8" alt={logo.alt} />
-                      <span className="text-lg font-semibold">{logo.title}</span>
+                    <a className="flex items-center gap-2">
+                      <Logo width={204} height={40} />
                     </a>
                   </SheetTitle>
                 </SheetHeader>
