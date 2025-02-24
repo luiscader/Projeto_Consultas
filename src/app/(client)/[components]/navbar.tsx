@@ -47,7 +47,7 @@ const Navbar = () => {
                 className="group relative rounded-full px-4 font-medium text-gray-700"
               >
                 {item.label}
-                <span className="absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 transform bg-[#007E85] transition-all duration-300 group-hover:w-1/2" />
+                <span className="bg-primary absolute bottom-0 left-1/2 h-0.5 w-0 -translate-x-1/2 transform transition-all duration-300 group-hover:w-1/2" />
               </a>
             ))}
           </div>
@@ -57,7 +57,7 @@ const Navbar = () => {
             <a href="#" className="rounded-full px-5 py-2 font-bold text-[#007E85]">
               Sign Up
             </a>
-            <button className="rounded-md bg-[#007E85] px-5 py-2 font-bold text-white shadow-md hover:shadow-lg">
+            <button className="bg-primary rounded-md px-5 py-2 font-bold text-white shadow-md hover:shadow-lg">
               Log In
             </button>
           </div>
